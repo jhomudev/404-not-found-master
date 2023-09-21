@@ -29,16 +29,24 @@
   gap: 2rem;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 0 3rem;
 }
 
 .block {
-  flex: 1 0 600px;
+  flex: 1 0 300px;
 }
 
 .img__box {
   width: min(100%, 600px);
   margin: 0 auto;
+
+}
+
+@media screen and (max-width: 800px) {
+  .img__box {
+    width:100%;
+  }
 }
 
 .img {
@@ -48,7 +56,6 @@
 }
 
 .text {
-  flex: 1 0 600px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -60,11 +67,23 @@
   font-size: 64px;
 }
 
+@media screen and (max-width: 600px) {
+  .text__title {
+    font-size: 48px;
+  }
+}
+
 .text__paragraph {
   font-size: 24px;
   font-weight: 400;
   font-weight: 400;
   line-height: 35.54px;
+}
+
+@media screen and (max-width: 600px) {
+  .text__paragraph {
+    font-size: 18px;
+  }
 }
 
 .btn__back {
